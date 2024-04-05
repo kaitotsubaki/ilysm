@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter 4 u.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4db68d;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #a6dad1;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .envelope {
+            position: relative;
+            width: 150px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .envelope:hover {
+            transform: translateY(-5px);
+        }
+
+        .letter {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 150px;
+            background-color: #fef5e6;
+            border-radius: 5px;
+            padding: 10px;
+            display: none;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            overflow: auto; 
+        }
+
+        .envelope:hover .letter {
+            display: block;
+        }
+
+        .letter p {
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            margin: 0;
+        }
+
+        /* Estilos para ocultar o áudio */
+        #hidden-audio {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Áudio oculto -->
+    <audio id="hidden-audio" autoplay>
+        <source src="her.mp3" type="audio/mpeg">
+    
+    </audio>
+
+    <div class="container"> 
+        <div class="envelope">
+            <img src="https://emojicdn.elk.sh/💌" alt="Envelope" style="width: 50px;">
+            <div class="letter">
+                <p>Querido Miguel,</p>
+                <p>Primeira semana de aula, era dia e eu estava na fila do restaurante, provavelmente indo almoçar também. Meu olhar percorreu por toda fila, não acostumado com novos rostos, até que meus olhos pousaram em você. E ficaram presos. Não demorou muito para que eu formulasse minhas primeiras impressões sobre ti. 
+
+ 
+
+                    <br> 
+                    
+                    “A teoria do Big-Bang sustenta que o Universo surgiu a partir de um ponto único - o átomo primordial - que se expandiu, causando um cataclismo cósmico inigualável a cerca de 13,8 bilhões de anos. E a mesma teoria afirma ainda que o Universo está em contínua expansão.” 
+                    
+                    <br> 
+                    
+                     
+                    
+                    Acho que foi exatamente aí um dos primeiros indícios do meu Big-Bang.  Eu te desejei, senti a vontade de te ver novamente. E meio que acabamos se conhecendo, me sinto num sonho que pensei que fosse inalcansável.  
+                    
+                    <br> 
+                    
+                     
+                    
+                    Dentre esse período que se conhecemos, aconteceu muitas coisas que, para mim, foram totalmente inesperadas. Eu não esperava desenvolver algo tão forte por você, isso foi além de meus medos e inseguranças. E essa é a primeira vez em tanto tempo que eu escrevo de verdade... eu tenho muito a te agradecer, muito mesm o. 
+                    
+                    <br> 
+                    
+                     
+                    
+                    Você é bom demais para ser verdade, quando eu menos percebi, me peguei amando e admirando cada trejeito, cada detalhe, cada traço que faz você ser VOCÊ. Eu queria tanto destacar cada uma dessas coisas mas acho que deixarei para o futuro, prometo que irei elaborar outro coisinho melhor. 
+                    
+                    <br> 
+                    
+                     
+                    
+                    Não amar por temer a dor é não viver por temer a morte. 
+                    
+                    Te amo. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementById('hidden-audio').play();
+    });
+</script>
+
